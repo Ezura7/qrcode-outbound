@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Manual Outbound</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <h2>QR Code Manual Outbound</h2>
+  <p>Masukkan Nomor pengikat/seal Karung:</p>
+  <textarea id="inputText" placeholder="Contoh: SEAL001... satu per baris"></textarea><br><br>
+  <button onclick="generateQRCodes()">Generate QR Codes</button>
+
+  <div class="qrcode-box" id="qrcodeContainer"></div>
+
+  <!-- Logo base64 AnterAja -->
+  <img id="logoImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABkCAYAAABOR/mrAAAACXBIWXMAAAsTAAALEwEAmpwYAAACf0lEQVR4nO3dMWrCQBBA0Un///lFxDIlFht2VGQduvGiS7iwzfsByU7wTkxVp2uxVAAAAAAAAAAAAAAAAAAAAAAAAAAD4G/gKcXeYeH3Th0ZKPO+axtPbHYuwb5nYz97K2ZtvYGHbHb7ePOu83M9+L+0Zh8Zlu9W4++R9gWmj1T0++r7TVGv2vULS2BnddBmbkz4elTY3XjC7aPzSzbt9j0U6y+7lKcW9+cbXt+bUrGHTrHtZrOpuzXDjf6C+zTTt7Lo1YNbmzRyrG3zfXun7PXpTWp7xY0tX7ZXPrmY0O2Vyy3k0sxWZc3HLfr1a6e2tZkvFONbbt12+XMz5m4q9H1u7HPox3bi2zW+rctZ76VLZb28iSttZo3T2cp9St+Wrc2yfUlZ02OfC3nZpMb8S8a5bpycY4Zt9edxeU86zPV2WzH2e9UJvbzfOPmTLkfzQ0t5UdTXu1djTtk7YXZb8xeybnVZ0n75b56L0eMr6p54Z2OWX9oM+1/wv95sQ+AAAAAElFTkSuQmCC" style="display:none" />
+
+  <script src="script.js"></script>
+</body>
+</html>
